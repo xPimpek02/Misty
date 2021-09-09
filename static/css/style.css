@@ -1,0 +1,148 @@
+:root{
+  --green: #38ccae;
+  --dark: #1b1b1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #38ccae;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(to right top, var(--dark), var(--green));
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  width: 66%;
+  height: 66%;
+  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  padding: 32px 92px;
+  border-radius: 20px;
+  position: relative;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  top: 0vh;
+}
+
+.myButton {
+	background-color:0;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:14px 31px;
+	text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    top: 70vh;
+}
+
+.myButton:hover {
+	background-color:0;
+}
+.myButton:active {
+	position:absolute;
+}
+
+#discord {
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  top: 90vh;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  top: -45.5vh;
+  display: inline-block;
+  padding: 0.50rem 1rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  right: 0px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: linear-gradient(to right top, var(--dark), var(--green));;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #20b3a1;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+.containerb {
+  text-decoration: none;
+  position: absolute;
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+span {
+  text-decoration: none;
+  display: block;
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  color: #777;
+}
+span a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #999;
+}
