@@ -7,8 +7,8 @@ app = Quart(__name__)
 ipc_client = ipc.Client(secret_key = "Swas")
 
 app.config["SECRET_KEY"] = "pimpek"
-app.config["DISCORD_CLIENT_ID"] = 883779489434308659  # Discord client ID.
-app.config["DISCORD_CLIENT_SECRET"] = "BUw5E_KOIkQ_a3AuP_M571n-1LggsyqX"   # Discord client secret.
+app.config["DISCORD_CLIENT_ID"] =  # Discord client ID.
+app.config["DISCORD_CLIENT_SECRET"] = ""   # Discord client secret.
 app.config["DISCORD_REDIRECT_URI"] = "http://127.0.0.1:5000/callback"
 
 discord = DiscordOAuth2Session(app)
