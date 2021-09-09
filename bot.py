@@ -65,4 +65,4 @@ async def get_guild_count(data):
     return len(client.guilds)
 
 client.ipc.start()
-client.run('ODgzNzc5NDg5NDM0MzA4NjU5.YTO5yg.JUPndF8OSsPJccs3RfbU1gdy8CU')
+client.run('')
